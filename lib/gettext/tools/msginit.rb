@@ -171,7 +171,7 @@ module GetText
                 _("Locale '#{language_tag}' is invalid. " +
                     "Please check if your specified locale is usable."))
         end
-        @locale = language_tag.to_simple.to_s
+        @locale = language_tag.to_s
         @language = language_tag.language
 
         @output_file ||= "#{@locale}.po"
